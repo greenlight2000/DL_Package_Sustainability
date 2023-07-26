@@ -1,0 +1,18 @@
+seed: 1337
+# data
+dataset_path: '../mvts_dataset.csv'
+trainval_test_split_ratio: 0.2
+train_val_split_ratio: 0.25
+start_timestep: 25 # 'min' # 'min', 'quantile1', 'median', 'quantile3', or numeric value
+end_timestep: 26 # 'quantile3' # 'min', 'quantile1', 'median', 'quantile3', or numeric value
+# model
+LSTM_hidden_size: 64
+LSTM_num_layers: 1
+dropout: 0.3
+optimizer: 'Adam'
+loss: 'binary_crossentropy'
+# experiment
+output_path: './exp1_results'
+exp_name: 'expname'
+epochs: 50
+repeat_times: 5

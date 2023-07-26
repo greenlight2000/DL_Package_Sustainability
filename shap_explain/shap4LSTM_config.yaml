@@ -1,0 +1,7 @@
+seed: 1337
+dataset_path: '../mvts_dataset.csv'
+timestep: 25 # match with model's accepetd input shape
+model_path: './model2explain/bestmodel_25.hdf5' # model to explain
+output_path: './explain_results'
+sample_list: [851] # lists of OSS project id's, these samples will be used to draw boxplot in "box" mode specified below
+mode: 'box' # 'box', 'line', or 'stackbar' 
